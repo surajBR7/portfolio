@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3; /* Light background for overall body */
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #ac94e0;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Stylish Headers */
+h2 {
+    color: #ac94e0; /* Primary color for section headers */
+    font-size: 2rem;
+    border-bottom: 2px solid #ac94e0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Education Section */
+#education {
+    background-color: #fdf4ff; /* Soft lavender */
+    padding: 40px 20px;
+}
+
+#education .education-item {
+    background: #fff; /* White cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#education h5 {
+    color: #4a3f82; /* Subtle purple for card titles */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#education p {
+    color: #6c757d; /* Muted gray for dates */
+    font-size: 0.9rem;
+}
+
+#education ul li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+.bg-primary {
+    background-color: #ac94e0 !important; /* Use your desired purple color */
+    color: white !important; /* Ensure text stays white for readability */
+}
+/* Experience Section */
+#experience {
+    background-color: #ece9f5; /* Soft grayish purple */
+    padding: 40px 20px;
+}
+
+#experience h5 {
+    color: #4a3f82; /* Subtle purple for job titles */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#experience p {
+    color: #6c757d; /* Muted gray for dates */
+    font-size: 0.9rem;
+}
+
+#experience ul li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff; /* White for better card contrast */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a3f82; /* Subtle purple for project titles */
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Read More Section */
+.read-more {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #ac94e0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.read-more-btn:hover {
+    background-color: #9678c4; /* Darker shade of purple */
+    color: white;
+}
+
+/* Resume and Contact Sections */
+.resume-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-section,
+.contact-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section {
+    background-color: #f9f4ff; /* Very light purple */
+}
+
+.contact-section {
+    background-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 project per row */
+    }
+}
